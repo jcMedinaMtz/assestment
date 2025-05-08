@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HotForex Landing</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+    .header {
+      background-color: #000;
+      color: #fff;
+      padding: 1rem 0;
+    }
+    .hero {
+      background: #1c1c2b url('./img/80ac68ae-706b-498e-b2b6-4494cf3b6ae7.png') no-repeat center center;
+      background-size: cover;
+      color: white;
+      padding: 3rem 0;
+    }
+    .hero .hero-img-container {
+      margin-bottom: -3rem;
+      text-align: center;
+    }
+    .hero .hero-img{
+      width: 80%;
+      height: 350px;
+      object-fit: cover;
+      object-position: top;
+    }
+    .hero .hero-apps a{
+      font-size: 3rem;
+      color: #ffffff;
+    }
+
+
+    .dark-section {
+      background: #0f1b2b;
+      color: white;
+      padding: 60px 0;
+    }
+    .footer {
+      background: #1a1a1a;
+      color: white;
+      padding: 2rem 0;
+      font-size: 14px;
+    }
+    .footer a {
+      color: #ccc;
+      text-decoration: none;
+    }    
+    .form-section {
+      background: #fff;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+    .info-section {
+      background: #e6eaec url('./img/02011884-577b-4676-bbe9-107861de3172.png') no-repeat center center;
+      padding: 3rem 0;
+    }
+    .info-section .info-icon {
+      font-size: 4rem;
+      color: #e60000;
+    }
+    .info-section .info-block-right {
+      text-align: right;
+    }
+    .info-section .info-block-left {
+      text-align: left;
+    }
+    .form-check-label {
+      font-size: 14px;
+    }
+    .btn-red {
+      background-color: #e60000;
+      color: white;
+    }
+    .icon-text i {
+      font-size: 24px;
+      color: #e60000;
+    }
+    .store-icons img {
+      height: 40px;
+      margin: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand" href="#">HotForex</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Accounts</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Platforms</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Education</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero">
+  <div class="container">
+    <div class="row">
+      <div class="col-5">
+          <h1 class="hero-title mb-4 text-left">
+            HotForex App
+            <br>
+            <sub>Your Indispensable Tool</sub>
+          </h1>
+          <ul class="list-unstyled mb-4">
+            <li>✔️ Feature One</li>
+            <li>✔️ Feature Two</li>
+            <li>✔️ Feature Three</li>
+          </ul>
+          <div class="hero-apps">
+            <a href="#"><i class="fa-brands fa-google-play"></i></a>
+            <a href="#"><i class="fa-brands fa-app-store"></i></a>
+          </div>
+      </div>
+      <div class="col-7">
+        <div class="hero-img-container">
+            <img class="hero-img" src="./img/8d4f4a45-25a2-4a71-82c2-52524bf6e436.png">
+          </div>
+      </div>
+  </div>
+  </div>
+</section>
+
+<!-- Formulario de registro -->
+<section class="form-section">
+    <div class="container">
+      <form id="signup-form">
+        <div class="row g-2">
+          <div class="col-10">
+            <div class="row">
+              <div class="col-md-4 mb-3">
+                <input type="text" class="form-control" placeholder="First Name">
+              </div>
+              <div class="col-md-4 mb-3">
+                <input type="text" class="form-control" placeholder="Last Name">
+              </div>
+              <div class="col-md-4 mb-3">
+                <input type="email" class="form-control" placeholder="Email" id="email">
+              </div>
+              <div class="col-md-4 mb-3">
+                <select class="form-select" id="country">
+                  <option value="">Country of Residence</option>
+                  <option value="+1">USA</option>
+                  <option value="+52">Mexico</option>
+                  <option value="+44">UK</option>
+                </select>
+              </div>
+              <div class="col-md-1 mb-3">
+                <input type="text" class="form-control" id="phone" placeholder="+">
+              </div>
+              <div class="col-md-3 mb-3">
+                <input type="text" class="form-control" placeholder="Phone Number" id="number">
+              </div>
+              <div class="col-md-4 mb-3">
+                <select class="form-select">
+                  <option>USD</option>
+                  <option>EUR</option>
+                  <option>GBP</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="row">
+              <div class="col-md-12 d-flex align-items-center">
+                <input class="form-check-input me-2" type="checkbox" id="privacy">
+                <label class="form-check-label" for="privacy">I have read and accepted the privacy policy</label>
+              </div>
+              <div class="col-md-12 text-center mt-3">
+                <button type="submit" class="btn btn-red">REGISTER NOW</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+<!-- Info dispositivos -->
+<section class="info-section text-center">
+  <div class="container">
+    <h2 class="mb-4">This is dummy text</h2>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-2">
+        <div class="py-5 info-block-right">
+          <i class="info-icon fa-solid fa-people-arrows"></i>
+          <p>It is a long established fact...</p>
+        </div>
+        <div class="py-5 info-block-right">
+          <i class="info-icon fa-solid fa-money-bill-wave"></i>
+          <p>The standard chunk of Lorem...</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <img src="./img/d3155a66-2921-42ef-8e21-c41bbd0db58e.png" class="img-fluid" alt="Devices">
+      </div>
+      <div class="col-md-2">
+        <div class="py-5 info-block-left">
+          <i class="info-icon fa-solid fa-network-wired"></i>
+          <p>It is a long established fact...</p>
+        </div>
+        <div class="py-5 info-block-left">
+          <i class="info-icon fa-solid fa-line-chart"></i>
+          <p>The standard chunk of Lorem...</p>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Sección oscura con texto -->
+<section class="dark-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center">
+        <img src="https://via.placeholder.com/200x400" class="img-fluid" alt="Phones">
+      </div>
+      <div class="col-md-6">
+        <h3>What is Lorem Ipsum?</h3>
+        <p><strong>Lorem Ipsum is simply dummy</strong></p>
+        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        <p><span class="text-danger">Lorem Ipsum passage 1</span></p>
+        <p><span class="text-danger">Lorem Ipsum passage 2</span></p>
+        <p><span class="text-danger">Lorem Ipsum passage 3</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA final -->
+<section class="text-center py-5">
+  <div class="container">
+    <p class="mb-3">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+    <p class="mb-3">DOWNLOAD IT NOW!</p>
+    <div>
+      <a href="#"><img src="https://via.placeholder.com/140x40?text=Google+Play" alt="Google Play"></a>
+      <a href="#"><img src="https://via.placeholder.com/140x40?text=App+Store" alt="App Store"></a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <p>🏆 Winner of 19 Industry Awards</p>
+    <div class="row">
+      <div class="col-md-4">
+        <p>Contact Us<br>support@hf.com<br>+357-24-400165<br>Live Chat</p>
+      </div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-3">
+            <p><strong>About</strong><br><a href="#">Company</a><br><a href="#">Funds Safety</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><strong>Products</strong><br><a href="#">Forex</a><br><a href="#">Commodities</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><strong>Promotions</strong><br><a href="#">Bonuses</a><br><a href="#">Contests</a></p>
+          </div>
+          <div class="col-md-3">
+            <p><strong>Affiliates</strong><br><a href="#">Affiliate Area</a><br><a href="#">Marketing Tools</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $('#signup-form').on('submit', function(e) {
+      const email = $('#email').val();
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(email)) {
+        e.preventDefault();
+        alert('Please enter a valid email address.');
+      }
+    });
+
+    $('#country').on('change', function() {
+      const code = $(this).val();
+      $('#phone').val(code);
+    });
+  </script>
+</body>
+</html>
