@@ -35,23 +35,6 @@
     .hero .hero-apps a{
       font-size: 3rem;
       color: #ffffff;
-    }
-
-
-    .dark-section {
-      background: #0f1b2b;
-      color: white;
-      padding: 60px 0;
-    }
-    .footer {
-      background: #1a1a1a;
-      color: white;
-      padding: 2rem 0;
-      font-size: 14px;
-    }
-    .footer a {
-      color: #ccc;
-      text-decoration: none;
     }    
     .form-section {
       background: #fff;
@@ -86,6 +69,51 @@
     .store-icons img {
       height: 40px;
       margin: 0.5rem;
+    }
+    .dark-section {
+      background-image: url(./img/80ac68ae-706b-498e-b2b6-4494cf3b6ae7.png);
+      background-color: #0f1b2b;
+      background-blend-mode: luminosity;
+      color: white;
+      padding: 4rem 0;
+    }
+    .dark-section .dark-section-img-container {
+      margin-bottom: -4rem;
+      text-align: center;
+    }
+    .dark-section .dark-section-img {
+      width: 70%;
+      height: 550px;
+      object-fit: cover;
+      object-position: top;
+    }
+    .final-section {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+    }
+    .final-section .final-section-cta {
+      font-size: 1.3rem;
+      text-align: center;
+      font-weight: bold;
+    }
+    .final-section .final-section-icons a {
+      font-size: 4rem;
+      color: #e60000;
+      padding: 1rem;
+    }
+    .socials {
+      color: #a3a0a0;
+      background-color: rgb(34 34 34);
+    }
+    .footer {
+      background: #1a1a1a;
+      color: white;
+      padding: 2rem 0;
+      font-size: 14px;
+    }
+    .footer a {
+      color: #ccc;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -133,8 +161,8 @@
       </div>
       <div class="col-7">
         <div class="hero-img-container">
-            <img class="hero-img" src="./img/8d4f4a45-25a2-4a71-82c2-52524bf6e436.png">
-          </div>
+          <img class="hero-img" src="./img/8d4f4a45-25a2-4a71-82c2-52524bf6e436.png">
+        </div>
       </div>
   </div>
   </div>
@@ -233,29 +261,61 @@
 <section class="dark-section">
   <div class="container">
     <div class="row align-items-center">
-      <div class="col-md-6 text-center">
-        <img src="https://via.placeholder.com/200x400" class="img-fluid" alt="Phones">
+      <div class="col-md-7 text-center">
+        <div class="dark-section-img-container">
+          <img class="dark-section-img" src="./img/iPhone-14-Pro-1.png">
+        </div>
       </div>
-      <div class="col-md-6">
-        <h3>What is Lorem Ipsum?</h3>
-        <p><strong>Lorem Ipsum is simply dummy</strong></p>
-        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-        <p><span class="text-danger">Lorem Ipsum passage 1</span></p>
-        <p><span class="text-danger">Lorem Ipsum passage 2</span></p>
-        <p><span class="text-danger">Lorem Ipsum passage 3</span></p>
+      <div class="col-md-5">
+        <h3 class="mb-5">
+          What is Lorem Ipsum?
+          <br>
+          <sub>Lorem Ipsum is simply dummy</sub>
+        </h3>
+        <p><span class="text-danger">Lorem Ipsum passages</span>
+          <br>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        </p>
+        <p><span class="text-danger">Lorem Ipsum passages</span>
+          <br>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        </p>
+        <p><span class="text-danger">Lorem Ipsum passages</span>
+          <br>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+        </p>
       </div>
     </div>
   </div>
 </section>
 
 <!-- CTA final -->
-<section class="text-center py-5">
+<section class="final-section">
+  <div class="container final-section-cta">
+    <p class="mb-3">Contrary to popular belief, Lorem Ipsum is not simply random text.
+      <br>
+      It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+      <br>
+    <p class="my-3"><strong>DOWNLOAD IT NOW!</strong></p>
+    <div class="final-section-icons">
+      <a href="#"><i class="fa-brands fa-google-play"></i></a>
+      <a href="#"><i class="fa-brands fa-app-store"></i></a>
+    </div>
+  </div>
+</section>
+<section class="socials">
   <div class="container">
-    <p class="mb-3">Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
-    <p class="mb-3">DOWNLOAD IT NOW!</p>
-    <div>
-      <a href="#"><img src="https://via.placeholder.com/140x40?text=Google+Play" alt="Google Play"></a>
-      <a href="#"><img src="https://via.placeholder.com/140x40?text=App+Store" alt="App Store"></a>
+    <div class="row">
+      <div class="col-8 py-2">
+        <h3 class="mb-0">🏆 Winner of 19 Industry Awards</h3>
+      </div>
+      <div class="col-4 py-3">
+        <span class="mx-1"><i class="fa-brands fa-facebook"></i></span>
+        <span class="mx-1"><i class="fa-brands fa-twitter"></i></span>
+        <span class="mx-1"><i class="fa-brands fa-instagram"></i></span>
+        <span class="mx-1"><i class="fa-brands fa-youtube"></i></span>
+        <span class="mx-1"><i class="fa-brands fa-google"></i></span>
+      </div>
     </div>
   </div>
 </section>
@@ -263,7 +323,6 @@
 <!-- Footer -->
 <footer class="footer">
   <div class="container">
-    <p>🏆 Winner of 19 Industry Awards</p>
     <div class="row">
       <div class="col-md-4">
         <p>Contact Us<br>support@hf.com<br>+357-24-400165<br>Live Chat</p>
